@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Login Page</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="login-container">
+      <div class="login-card">
+        <div class="login-header">
+          <div class="logo">AP</div>
+
+          <h1>Welcome Back</h1>
+          <p>Login untuk melanjutkan ke akun kamu</p>
+        </div>
+
+        <form onsubmit="login(event)">
+          <div class="input-group">
+            <label for="email">Email</label>
+
+            <input
+              type="email"
+              id="email"
+              placeholder="Masukkan email kamu"
+              required
+            />
+          </div>
+
+          <div class="input-group">
+            <label for="password">Password</label>
+
+            <div class="password-box">
+              <input
+                type="password"
+                id="password"
+                placeholder="Masukkan password"
+                required
+              />
+
+              <button
+                type="button"
+                class="show-password"
+                onclick="togglePassword()"
+              >
+                👁
+              </button>
+            </div>
+          </div>
+
+          <div class="login-option">
+            <label>
+              <input type="checkbox" />
+              Remember me
+            </label>
+
+            <a href="#">Forgot Password?</a>
+          </div>
+
+          <button type="submit" class="login-button">Login</button>
+        </form>
+
+        <div class="divider">
+          <span>atau</span>
+        </div>
+
+        <button class="google-button">
+          <span>G</span>
+          Continue with Google
+        </button>
+
+        <p class="register">
+          Belum punya akun?
+          <a href="#">Daftar sekarang</a>
+        </p>
+      </div>
+    </div>
+
+    <script src="js/lat.js"></script>
+  </body>
+</html>
+```
